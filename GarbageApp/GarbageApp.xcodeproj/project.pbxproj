@@ -15,6 +15,9 @@
 		6337A63B25D36FF00073E7E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6337A63925D36FF00073E7E1 /* LaunchScreen.storyboard */; };
 		6337A64625D36FF00073E7E1 /* GarbageAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6337A64525D36FF00073E7E1 /* GarbageAppTests.swift */; };
 		6337A65125D36FF00073E7E1 /* GarbageAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6337A65025D36FF00073E7E1 /* GarbageAppUITests.swift */; };
+		6337A66A25D3816A0073E7E1 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6337A66925D3816A0073E7E1 /* CameraService.swift */; };
+		6337A66F25D38DF20073E7E1 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6337A66E25D38DF20073E7E1 /* Structs.swift */; };
+		6337A67425D3936E0073E7E1 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6337A67325D3936E0073E7E1 /* Enums.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		6337A64C25D36FF00073E7E1 /* GarbageAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GarbageAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6337A65025D36FF00073E7E1 /* GarbageAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarbageAppUITests.swift; sourceTree = "<group>"; };
 		6337A65225D36FF00073E7E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6337A66925D3816A0073E7E1 /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
+		6337A66E25D38DF20073E7E1 /* Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
+		6337A67325D3936E0073E7E1 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,9 @@
 				6337A63925D36FF00073E7E1 /* LaunchScreen.storyboard */,
 				6337A63C25D36FF00073E7E1 /* Info.plist */,
 				6337A63625D36FF00073E7E1 /* Preview Content */,
+				6337A66925D3816A0073E7E1 /* CameraService.swift */,
+				6337A66E25D38DF20073E7E1 /* Structs.swift */,
+				6337A67325D3936E0073E7E1 /* Enums.swift */,
 			);
 			path = GarbageApp;
 			sourceTree = "<group>";
@@ -266,8 +275,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6337A66A25D3816A0073E7E1 /* CameraService.swift in Sources */,
 				6337A62F25D36FEE0073E7E1 /* AppDelegate.swift in Sources */,
+				6337A66F25D38DF20073E7E1 /* Structs.swift in Sources */,
 				6337A63125D36FEE0073E7E1 /* SceneDelegate.swift in Sources */,
+				6337A67425D3936E0073E7E1 /* Enums.swift in Sources */,
 				6337A63325D36FEE0073E7E1 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
