@@ -38,15 +38,50 @@ public class CameraService{
     // let is a constant, which cannot change
     public let session = AVCaptureSession()
     
+    private var isSessionRunning = false
+    
     private var isConfigured = false
     
-    private var setupResult: SessionSetupResult = .success
-    
-    
-    
-    
+    private var setupResult: SessionSetupResult = SessionSetupResult.success
     
     private let sessionQueue = DispatchQueue(label: "camera session queue")
+    
+    
+    @objc dynamic var videoDeviceInput: AVCaptureDeviceInput!
+    
+    private let photoOutput = AVCapturePhotoOutput()
+    
+    private var inProgressPhotoCaptureDelegates = [Int64: PhotoCaptureProcessor]()
+    
+    public func checkPermissions(){
+        switch AVCaptureDevice.authorizationStatus(for: AVMediaType.video){
+        case AVAuthorizationStatus.authorized:
+            break
+        case AVAuthorizationStatus.notDetermined:
+            sessionQueue.suspend()
+            AVCaptureDevice.requestAccess(for: AVMediaType.video) { granted in
+                if !granted{
+                    self.setupResult = SessionSetupResult.notAuthorized
+                }
+                
+                self.sessionQueue.resume()
+            }
+            
+        default:
+            setupResult =  SessionSetupResult.notAuthorized
+            
+            DispatchQueue.main.async{
+                self.alertError = AlertError(title: "Camera Access", message: "SwiftCamera doesn't have access to use your camera, please update your privacy settings.", primaryButtonTitle: "Settings", secondaryButtonTitle: nil, primaryAction: {
+                                        UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!,
+                                                                  options: [:], completionHandler: nil)
+                                }, secondaryAction: nil)
+                self.shouldShowAlertView = true
+                self.isCameraUnavailable = true
+                self.isCameraButtonDisabled = true
+            }
+            
+        }
+    }
 }
 
 
