@@ -16,6 +16,10 @@
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
+	<key>NSCameraUsageDescription</key>
+	<string>For getting the images of the garbage you are pointing with your camera</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>To get images of garbages in your photo album</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 </dict>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6307EF3125EB68E400FA063B /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6307EF3025EB68E400FA063B /* CameraPreview.swift */; };
+		6307EF3625EB721B00FA063B /* ImageResizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6307EF3525EB721B00FA063B /* ImageResizer.swift */; };
 		63157D5325DA3AC600F776EF /* photoCaptureProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63157D5225DA3AC600F776EF /* photoCaptureProcessor.swift */; };
 		6337A62F25D36FEE0073E7E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6337A62E25D36FEE0073E7E1 /* AppDelegate.swift */; };
 		6337A63125D36FEE0073E7E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6337A63025D36FEE0073E7E1 /* SceneDelegate.swift */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6307EF3025EB68E400FA063B /* CameraPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreview.swift; sourceTree = "<group>"; };
+		6307EF3525EB721B00FA063B /* ImageResizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResizer.swift; sourceTree = "<group>"; };
 		63157D5225DA3AC600F776EF /* photoCaptureProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photoCaptureProcessor.swift; sourceTree = "<group>"; };
 		6337A62B25D36FEE0073E7E1 /* GarbageApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GarbageApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6337A62E25D36FEE0073E7E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +122,8 @@
 				6337A66E25D38DF20073E7E1 /* Structs.swift */,
 				6337A67325D3936E0073E7E1 /* Enums.swift */,
 				63157D5225DA3AC600F776EF /* photoCaptureProcessor.swift */,
+				6307EF3025EB68E400FA063B /* CameraPreview.swift */,
+				6307EF3525EB721B00FA063B /* ImageResizer.swift */,
 			);
 			path = GarbageApp;
 			sourceTree = "<group>";
@@ -279,11 +285,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6337A66A25D3816A0073E7E1 /* CameraService.swift in Sources */,
+				6307EF3125EB68E400FA063B /* CameraPreview.swift in Sources */,
 				6337A62F25D36FEE0073E7E1 /* AppDelegate.swift in Sources */,
 				6337A66F25D38DF20073E7E1 /* Structs.swift in Sources */,
 				6337A63125D36FEE0073E7E1 /* SceneDelegate.swift in Sources */,
 				63157D5325DA3AC600F776EF /* photoCaptureProcessor.swift in Sources */,
 				6337A67425D3936E0073E7E1 /* Enums.swift in Sources */,
+				6307EF3625EB721B00FA063B /* ImageResizer.swift in Sources */,
 				6337A63325D36FEE0073E7E1 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
