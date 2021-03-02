@@ -9,14 +9,25 @@ import SwiftUI
 import Combine
 import AVFoundation
 
+/*
+ ObservableObject protocol means SwiftUI's views can watch it for changes
+ Only the properties marked with @Published will make announcements of changes
+ */
 final class CameraViewModel: ObservableObject {
     private let service = CameraService()
     
+    /*
+     Published allows to create observable objects that automaticall announce when changes occur
+     SwiftUI will automatically monitor for such changes, and re-invoke the body property of any viewsd that rely on the data
+     from: https://www.hackingwithswift.com/quick-start/swiftui/what-is-the-published-property-wrapper
+     */
     @Published var photo: Photo!
     
     @Published var showAlertError = false
     
     @Published var isFlashOn = false
+    
+    @Published var willCapturePhoto = false
     
     var alertError: AlertError!
     
@@ -160,7 +171,8 @@ struct CameraView: View {
                         })
                         .overlay(
                             Group {
-                                if model.willCapturePhoto {
+
+                                if model.willCapturePhoto{
                                     Color.black
                                 }
                             }

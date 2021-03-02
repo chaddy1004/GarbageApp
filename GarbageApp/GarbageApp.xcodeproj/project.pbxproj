@@ -113,12 +113,12 @@
 			children = (
 				6337A62E25D36FEE0073E7E1 /* AppDelegate.swift */,
 				6337A63025D36FEE0073E7E1 /* SceneDelegate.swift */,
-				6337A63225D36FEE0073E7E1 /* ContentView.swift */,
 				6337A63425D36FF00073E7E1 /* Assets.xcassets */,
 				6337A63925D36FF00073E7E1 /* LaunchScreen.storyboard */,
 				6337A63C25D36FF00073E7E1 /* Info.plist */,
 				6337A63625D36FF00073E7E1 /* Preview Content */,
 				6337A66925D3816A0073E7E1 /* CameraService.swift */,
+				6337A63225D36FEE0073E7E1 /* ContentView.swift */,
 				6337A66E25D38DF20073E7E1 /* Structs.swift */,
 				6337A67325D3936E0073E7E1 /* Enums.swift */,
 				63157D5225DA3AC600F776EF /* photoCaptureProcessor.swift */,
